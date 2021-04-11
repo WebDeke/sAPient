@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Ameya Singh (WebDeke)" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>sAPient | Home</title>
+
+	<style>
+		.block-slider-1 .search-form {
+			width: 120px;
+			transition: width .3s ease;
+		}
+		@media (min-width: 768px) {
+			.block-slider-1 .search-form {
+				width: 200px;
+				transition: width .3s ease;
+			}
+			.block-slider-1 .search-form:focus-within {
+				width: 300px;
+			}
+		}
+
+		#header.dark.block-slider-1 .search-form {
+			border-bottom-color: rgba(255, 255, 255, 0.6) !important;
+		}
+
+		.block-slider-1.dark .search-form input:focus::-moz-placeholder { color: #BBB; }
+		.block-slider-1.dark .search-form input:focus:-ms-input-placeholder { color: #BBB; }
+		.block-slider-1.dark .search-form input:focus::-webkit-input-placeholder { color: #BBB; }
+
+		.dark .search-form .form-control:not(.not-dark),
+		.dark .search-form i { color: #EEE; }
+
+		.block-slider-1 {
+			--t-color: #EEE;
+		}
+
+		.block-slider-1 .slide-number {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			opacity: 1;
+			top: 50%;
+			bottom: auto !important;
+			left: auto;
+			right: 20px;
+			color: var(--t-color);
+			text-shadow: none;
+			width: auto;
+			height: auto;
+			padding: 0;
+			writing-mode: vertical-rl;
+			transform: translateY(-50%);
+		}
+
+		.block-slider-1 .slide-number-current,
+		.block-slider-1 .slide-number-total {
+			position: relative;
+			top: auto;
+			bottom: auto;
+		}
+
+		.block-slider-1 .slide-number span {
+			position: relative;
+			height: 30px;
+			width: 1px;
+			background-color: var(--t-color);
+			margin: 30px 0;
+		}
+
+		.block-slider-1 .slider-arrow-left,
+		.block-slider-1 .slider-arrow-right {
+			display: flex;
+			align-items: center;
+			width: auto;
+			height: auto;
+			top: auto;
+			left: auto;
+			right: 110px;
+			bottom: 30px;
+			transform: translateY(0);
+			color: var(--t-color);
+			background-color: transparent !important;
+		}
+
+		.block-slider-1 .slider-arrow-left span,
+		.block-slider-1 .slider-arrow-right span {
+			margin: 0 10px;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+
+		.block-slider-1 .slider-arrow-left:hover,
+		.block-slider-1 .slider-arrow-right:hover {
+			background-color: transparent !important;
+		}
+
+		.block-slider-1 .slider-arrow-right {
+			right: 30px;
+		}
+
+		.block-slider-1 .slider-arrow-left i,
+		.block-slider-1 .slider-arrow-right i {
+			position: relative;
+			color: var(--t-color);
+			text-shadow: none;
+			font-size: 20px;
+		}
+        [id^="particles-"]  {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-position: 50% 50%;
+		}
+        #distro-meter {
+          border: 2px solid white;
+          border-radius: 20px;
+          overflow: hidden;
+          display: grid;
+          grid-template-columns: 2.5fr 4fr 8.5fr 7.5fr 5fr 10fr 5fr 5fr 2.5fr;;
+        }
+
+        #unit-1 {
+          background: #48bb78;
+        }
+
+        #unit-2 {
+          background: #ecc94b;
+        }
+
+        #unit-3 {
+          background: #ed8936;
+        }
+
+        #unit-4 {
+          background: #e53e3e;
+        }
+
+        #unit-5 {
+          background: #805ad5;
+        }
+
+        #unit-6 {
+          background: #48bb78;
+        }
+
+        #unit-7 {
+          background: #ecc94b;
+        }
+
+        #unit-8 {
+          background: #ed8936;
+        }
+
+        #unit-9 {
+          background: #e53e3e;
+        }
+
+        #unit-10 {
+          background: #805ad5;
+        }
+
+        #distro-meter div {
+          color: white;
+          font-family: sans-serif;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .inv {
+            display: none;
+        }
+
+	</style>
+
+</head>
+
+<body class="stretched">
+    <div class="body-overlay"></div>
+	<div id="side-panel" class="dark">
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+		<div class="side-panel-wrap">
+			<div class="widget clearfix">
+				<h4>Quick Jump</h4>
+				<nav class="nav-tree mb-0">
+					<ul>
+						<li><a href="#basic-info"><i class="icon-bolt2"></i>Basic Info</a></li>
+						<li><a href="#rundown"><i class="icon-bolt2"></i>Rundown</a></li>
+                        <li><a href="#score-distro"><i class="icon-bolt2"></i>Score Distribution</a></li>
+                        <li><a href="#credit"><i class="icon-bolt2"></i>Credit for College</a></li>
+                        <li><a href="#resources"><i class="icon-bolt2"></i>Resources</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		<header id="header" class="transparent-header block-slider-1" data-sticky-class="not-dark">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Brand
+						============================================= -->
+						<a class="navbar-brand" >sAPient</a>
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Find Your AP</div></a>
+									<ul class="sub-menu-container">
+									<li class="menu-item">
+										<a class="menu-link" href="apush.html">
+											<div>AP US History</div>
+										</a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="ap=calc=bc.html">
+											<div>AP Calculus BC</div>
+										</a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="ap-csp.html">
+											<div>AP Computer Science Principles</div>
+										</a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="ap-chinese.html">
+											<div>AP Chinese Language and Composition</div>
+										</a>
+									</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="faq.html"><div>FAQs</div></a>
+								</li>
+							</ul>
+
+						</nav>
+
+
+                        <!-- demo menu-->
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+        <!-- Hero Section
+    ============================================= -->
+    <a name="basic-info"></a>
+    <section id="slider" class="slider-element" style="background: url('images/blocks/preview/hero-12.jpg') top center no-repeat; background-size: cover;">
+
+			<div class="vertical-middle min-vh-100">
+				<div class="container py-5 py-md-0">
+					<div class="row">
+						<div class="col-lg-7 col-md-8">
+                            <h1 class="display-4 font-weight-bold">AP US History</h1>
+                            <p class="lead text-black-50 mb-5">Study the cultural, economic, political, and social developments that have shaped the United States from c. 1491 to the present. You’ll analyze texts, visual sources, and other historical evidence and write essays expressing historical arguments.</p>
+                            <p class="lead text-white-20 mb-5">Exam Dates: May 6th, 19th, and June 2nd</p>
+                            <a href="#" class="btn btn-light btn-lg border-width-2 side-panel-trigger px-4">Launch QuickJump</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+        <section id="content">
+
+    			<div class="content-wrap py-0">
+                    <a name="rundown"></a>
+    				<div class="section m-0 dark" style="padding: 80px 0">
+    					<div class="container clearfix" style="max-width: 800px">
+
+    						<div class="center dark" >
+
+    							<div class="heading-block">
+    								<h2>Course Rundown</h2>
+    								<span>Show off your Important Content with Elegance &amp; Attitude.</span>
+    							</div>
+                                <div class="tabs tabs-bb clearfix center" id="tab-9">
+
+    								<ul class="tab-nav clearfix">
+    									<li><a href="#tabs-33">Main Units</a></li>
+    									<li><a href="#tabs-34">Recommended Pre-Requisites</a></li>
+    									<li><a href="#tabs-35">Test Format</a></li>
+    								</ul>
+
+    								<div class="tab-container">
+                        				<div class="tab-content clearfix" id="tabs-33">
+                                            <div id="distro-meter">
+                                              <div id="unit-1" data-toggle="tooltip" data-placement="bottom" title="Unit 1">5%</div>
+                                              <div id="unit-2" data-toggle="tooltip" data-placement="bottom" title="Unit 2">8%</div>
+                                              <div id="unit-3" data-toggle="tooltip" data-placement="bottom" title="Unit 3">17%</div>
+                                              <div id="unit-4" data-toggle="tooltip" data-placement="bottom" title="Unit 4">15%</div>
+                                              <div id="unit-5" data-toggle="tooltip" data-placement="bottom" title="Unit 5">10%</div>
+                                              <div id="unit-6" data-toggle="tooltip" data-placement="bottom" title="Unit 6">20%</div>
+                                              <div id="unit-7" data-toggle="tooltip" data-placement="bottom" title="Unit 7">10%</div>
+                                              <div id="unit-8" data-toggle="tooltip" data-placement="bottom" title="Unit 8">10%</div>
+                                              <div id="unit-9" data-toggle="tooltip" data-placement="bottom" title="Unit 9">5%</div>
+                                            </div>
+                                            <hr/>
+                                            <table class="table table-striped">
+                							  <thead>
+                								<tr>
+                								  <th>Unit #</th>
+                								  <th>Title</th>
+                                                  <th>Weight in your score</th>
+                								</tr>
+                							  </thead>
+                							  <tbody>
+                								<tr>
+                								  <td>1</td>
+                								  <td>1491-1607</td>
+                								  <td>4-6%</td>
+                								</tr>
+                								<tr>
+                								  <td>2</td>
+                								  <td>1607-1754</td>
+                								  <td>6-8%</td>
+                								</tr>
+                								<tr>
+                								  <td>3</td>
+                								  <td>1754-1800</td>
+                								  <td>10-17%</td>
+                								</tr>
+                                                <tr>
+                								  <td>4</td>
+                								  <td>1800-1848</td>
+                								  <td>10-17%</td>
+                								</tr>
+                								<tr>
+                								  <td>5</td>
+                								  <td>1844-1877</td>
+                								  <td>10-17%</td>
+                								</tr>
+                								<tr>
+                								  <td>6</td>
+                								  <td>1865-1898</td>
+                								  <td>10-17%</td>
+                								</tr>
+                                                <tr>
+                								  <td>7</td>
+                								  <td>1890-1945</td>
+                								  <td>10-17%</td>
+                								</tr>
+                								<tr>
+                								  <td>8</td>
+                								  <td>1945-1980</td>
+                								  <td>10-17%</td>
+                								</tr>
+                								<tr>
+                								  <td>9</td>
+                								  <td>1980-Present</td>
+                								  <td>4-6%</td>
+                								</tr>
+                							  </tbody>
+                							</table>
+
+                        				</div>
+                        			    <div class="tab-content clearfix" id="tabs-34">
+                        					There are no recommended pre-requisities. This course is equivalent to two semesters of college US History.
+                                		</div>
+                                		<div class="tab-content clearfix" id="tabs-35">
+                                			<p>The digital versions of this year's exam include two SAQs and a DBQ instead of a DBQ and LEQ.</p>
+                                            <table class="table table-striped">
+                							  <thead>
+                								<tr>
+                								  <th>Time Alotted</th>
+                								  <th>Type of Section</th>
+                                                  <th>Weight</th>
+                								</tr>
+                							  </thead>
+                							  <tbody>
+                								<tr>
+                								  <td>55 minutes</td>
+                								  <td>55 MC Questions</td>
+                								  <td>40% of exam score</td>
+                								</tr>
+                								<tr>
+                								  <td>40 minutes</td>
+                								  <td>3 SAQs</td>
+                								  <td>20% of exam score</td>
+                								</tr>
+                								<tr>
+                								  <td>100 minutes</td>
+                								  <td>1 DBQ + 1 LEQ (or 2 SAQs)</td>
+                								  <td>40% of exam score</td>
+                								</tr>
+                							  </tbody>
+                							</table>
+                                		</div>
+                                    </div>
+                                </div>
+    						</div>
+
+    					</div>
+    				</div>
+
+    				<div class="section m-0" style="background-color: #dc3545; padding: 80px 0">
+    					<div class="container clearfix" style="max-width: 800px">
+                            <a name="score-distro"></a>
+    						<div class="center dark" >
+
+    							<div class="heading-block">
+    								<h2>Score Distribution</h2>
+    								<span>Show off your Important Content with Elegance &amp; Attitude.</span>
+    							</div>
+                                <div class="row ">
+                                    <div class="col-sm-6 col-lg-4 text-center">
+                                		<div class="counter"><span data-from="1" data-to="472697" data-refresh-interval="100" data-speed="1200"></span></div>
+                                		<h5>Test takers in 2020</h5>
+                                	</div>
+                                    <div class="col-sm-6 col-lg-4 text-center">
+                                		<div class="counter"><span data-from="1" data-to="283" data-refresh-interval="100" data-speed="1200" data-comma="true" data-sep="." data-places="2"></span></div>
+                                		<h5>Average Score</h5>
+                                	</div>
+            						<div class="col-sm-6 col-lg-4 text-center">
+            							<div class="counter"><span data-from="1" data-to="5870" data-refresh-interval="100" data-speed="1200" data-comma="true" data-sep="." data-places="2"></span></div>
+            							<h5>Percent receive a <br/> passing score (3+)</h5>
+            						</div>
+                                </div>
+                                <hr/>
+                                <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>Score</th>
+                                      <th>% of Students</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>5</td>
+                                      <td>13.0%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>19.2%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>26.6%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>20.4%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>21.0%</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <div class="toggle toggle-border">
+								<div class="toggle-header">
+									<div class="toggle-icon">
+										<i class="toggle-closed icon-line-plus"></i>
+										<i class="toggle-open icon-line-minus"></i>
+									</div>
+									<div class="toggle-title">
+										Distributions in 2019
+									</div>
+								</div>
+								<div class="toggle-content">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-4 text-center">
+                                    		<div class="counter"><span data-from="1" data-to="496573" data-refresh-interval="100" data-speed="1200"></span></div>
+                                    		<h5>Test takers in 2019</h5>
+                                    	</div>
+                                        <div class="col-sm-6 col-lg-4 text-center">
+                                    		<div class="counter"><span data-from="1" data-to="271" data-refresh-interval="100" data-speed="1200" data-comma="true" data-sep="." data-places="2"></span></div>
+                                    		<h5>Average Score</h5>
+                                    	</div>
+                						<div class="col-sm-6 col-lg-4 text-center">
+                							<div class="counter"><span data-from="1" data-to="5370" data-refresh-interval="100" data-speed="1200" data-comma="true" data-sep="." data-places="2"></span></div>
+                							<h5>Percent receive a <br/> passing score (3+)</h5>
+                						</div>
+                                    </div>
+                                    <hr/>
+                                    <table class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th>Score</th>
+                                          <th>% of Students</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>5</td>
+                                          <td>11.8%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4</td>
+                                          <td>18.4%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>23.4%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>22.0%</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>24.3%</td>
+                                        </tr>
+                                  </tbody>
+                                </table>
+							</div>
+    						</div>
+
+    					</div>
+    				</div>
+                </div>
+                    <a name="credit"></a>
+    				<div class="section m-0 dark" style="padding: 80px 0">
+    					<div class="container clearfix" style="max-width: 600px">
+
+    						<div class="center dark" >
+
+    							<div class="heading-block">
+    								<h2>Check for College Credit</h2>
+    								<span>Use the dropdown below to find out if the university you're looking to gives you credit or placement for taking the AP exam in this course.</span>
+    							</div>
+										<select id="target-real">
+                                            <option value="" selected>Choose a school...</option>
+                                            <option value="content_1">Princeton</option>
+                                            <option value="content_2">Harvard</option>
+                                            <option value="content_3">Columbia</option>
+                                            <option value="content_4">MIT</option>
+                                            <option value="content_5">Yale</option>
+                                            <option value="content_6">Stanford</option>
+                                            <option value="content_7">UChicago</option>
+                                            <option value="content_8">UPenn</option>
+                                            <option value="content_9">CalTech</option>
+                                            <option value="content_10">Johns Hopkins</option>
+                                            <option value="content_11">Northwestern</option>
+                                            <!--<option value="content_12">Option 12</option>
+                                            <option value="content_13">Option 13</option>
+                                            <option value="content_14">Option 14</option>
+                                            <option value="content_15">Option 15</option>
+                                            <option value="content_16">Option 16</option>
+                                            <option value="content_17">Option 17</option>
+                                            <option value="content_18">Option 18</option>
+                                            <option value="content_19">Option 19</option>
+                                            <option value="content_20">Option 20</option>-->
+										</select>
+
+                                        <hr/>
+                                <div id="content_1" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Princeton</td>
+        								  <td>Yes</td>
+        								  <td>4, 5</td>
+        								  <td>1 Credit</td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_2" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Harvard</td>
+        								  <td>Yes</td>
+        								  <td>5</td>
+        								  <td>8 credits</td>
+        								</tr>
+                                    </tbody>
+        						</table></div>
+                                <div id="content_3" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Columbia</td>
+        								  <td>Yes</td>
+        								  <td>5</td>
+        								  <td>3 credits</td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_4" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>MIT</td>
+        								  <td>Yes</td>
+        								  <td>5</td>
+        								  <td>9 Credits</td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_5" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Yale</td>
+        								  <td>NONE Provided</td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_6" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Stanford</td>
+        								  <td>NONE Provided</td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_7" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>UChicago</td>
+        								  <td>Yes</td>
+        								  <td>5</td>
+        								  <td>100 units general elective credit</td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_8" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>UPenn</td>
+        								  <td>NONE Provided</td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <!--<div id="content_9" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>CalTech</td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_10" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Johns Hopkins</td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_11" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td>Northwestern</td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_12" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_13" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_14" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_15" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_16" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_17" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_18" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_19" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>
+                                <div id="content_20" class="inv"><table class="table">
+        							  <thead>
+        								<tr>
+        								  <th>Institution</th>
+        								  <th>Gives Credit?</th>
+        								  <th>Score(s) Required</th>
+        								  <th>Benefits</th>
+        								</tr>
+        							  </thead>
+        							  <tbody>
+        								<tr>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								  <td></td>
+        								</tr>
+        							  </tbody>
+        						</table></div>-->
+
+    						</div>
+
+    					</div>
+    				</div>
+                    <a name="resources"></a>
+                    <div class="section m-0" style="background-color: #dc3545; padding: 80px 0">
+    					<div class="container clearfix" style="max-width: 800px">
+                            <a name="score-distro"></a>
+    						<div class="center dark" >
+
+    							<div class="heading-block">
+    								<h2>Resources</h2>
+    								<span>Show off your Important Content with Elegance &amp; Attitude.</span>
+    							</div>
+                                <div class="row">
+						<div class="col-lg-4 mb-4">
+							<div class="flip-card top-to-bottom">
+								<div class="flip-card-front dark" data-height-xl="200" style="background-image: url('https://www.wisbusiness.com/wp-content/uploads/2020/02/Fiveable-square-logo.png');">
+									<div class="flip-card-inner">
+										<div class="card bg-transparent border-0">
+											<div class="card-body">
+												<h3 class="card-title mb-0">Fiveable.me</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card-back" data-height-xl="200" style="background-image: url('https://www.wisbusiness.com/wp-content/uploads/2020/02/Fiveable-square-logo.png');">
+									<div class="flip-card-inner">
+										<a href="https://fiveable.me/apush" class="btn btn-outline-light mt-2">Link to Fiveable</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-4">
+							<div class="flip-card top-to-bottom">
+								<div class="flip-card-front dark" data-height-xl="200" style="background-image: url('https://cdn.kastatic.org/images/khan-logo-dark-background-2.png');">
+									<div class="flip-card-inner">
+										<div class="card bg-transparent border-0">
+											<div class="card-body">
+												<h3 class="card-title mb-0">Khan Academy</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card-back" data-height-xl="200" style="background-image: url('https://cdn.kastatic.org/images/khan-logo-dark-background-2.png');">
+									<div class="flip-card-inner">
+										<a href="https://www.khanacademy.org/humanities/ap-us-history" class="btn btn-outline-light mt-2">Link to Site</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 mb-4">
+							<div class="flip-card top-to-bottom">
+								<div class="flip-card-front dark" data-height-xl="200" style="background-image: url('https://secure-media.collegeboard.org/apc/ap-english-literature.gif');">
+									<div class="flip-card-inner">
+										<div class="card bg-transparent border-0">
+											<div class="card-body">
+												<h3 class="card-title mb-0">AP Daily</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card-back" data-height-xl="200" style="background-image: url('https://secure-media.collegeboard.org/apc/ap-english-literature.gif');">
+									<div class="flip-card-inner">
+										<a href="https://apcentral.collegeboard.org/instructional-resources/ap-daily" class="btn btn-outline-light mt-2">Link to Site</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+							</div>
+    						</div>
+
+    					</div>
+    				</div>
+                </div>
+
+
+    		</section><!-- #content end -->
+
+
+</div><!-- #wrapper end -->
+        	<!-- Go To Top
+        	============================================= -->
+        	<div id="gotoTop" class="icon-angle-up"></div>
+
+        	<!-- JavaScripts
+        	============================================= -->
+        	<script src="js/jquery.js"></script>
+        	<script src="js/plugins.min.js"></script>
+
+        	<script src="js/jquery.hotspot.js"></script>
+
+
+        	<!-- Bootstrap Select Plugin -->
+        	<script src="js/components/bs-select.js"></script>
+
+        	<!-- Select Splitter Plugin -->
+        	<script src="js/components/selectsplitter.js"></script>
+
+
+        	<!-- Footer Scripts
+        	============================================= -->
+        	<script src="js/functions.js"></script>
+            <script>
+                document
+                    .getElementById('target-real')
+                    .addEventListener('change', function () {
+                        'use strict';
+                        var vis = document.querySelector('.vis'),
+                            target = document.getElementById(this.value);
+                        if (vis !== null) {
+                            vis.className = 'inv';
+                        }
+                        if (target !== null ) {
+                            target.className = 'vis';
+                        }
+                });
+            </script>
+
+        </body>
+        </html>
